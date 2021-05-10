@@ -6,7 +6,7 @@ node {
         stage ('clean'){
     	dir("comtest") {
 	   sh "mvn clean "
-       }
+	}}
 	stage ('Build'){
     	dir("comtest") {
 	   sh "mvn clean install"
