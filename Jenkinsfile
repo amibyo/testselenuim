@@ -3,7 +3,7 @@ pipeline {
 	//stage ('SCM checkout'){
 	//	git "https://github.com/AMIBYO/testselenuim.git"
 		//}
-  stages (test) {
+  stages {
 	stage ('Build'){
     	dir("comtest") {
 	   sh "mvn clean install"
