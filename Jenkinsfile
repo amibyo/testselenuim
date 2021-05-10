@@ -1,7 +1,7 @@
 node {
 		 
 	stage ('SCM checkout'){
-		git "https://github.com/AMIBYO/testselenuim.git"
+		git "https://github.com/AMIBYO/Selenium-Course.git"
 		}
         
 	stage ('Build'){
