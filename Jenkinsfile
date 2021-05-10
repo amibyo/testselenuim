@@ -1,9 +1,10 @@
 pipeline {
 	agent any
-	//stage ('SCM checkout'){
-	//	git "https://github.com/AMIBYO/testselenuim.git"
-		//}
-  stages {
+	 stages {
+	stage ('SCM checkout'){
+		git "https://github.com/AMIBYO/testselenuim.git"
+		}
+
 	stage ('Build'){
     	dir("comtest") {
 	   sh "mvn clean install"
