@@ -1,6 +1,5 @@
-pipeline {
-	agent any
-	 stages {
+node {
+		 
 	stage ('SCM checkout'){
 		git "https://github.com/AMIBYO/testselenuim.git"
 		}
@@ -11,6 +10,6 @@ pipeline {
        }
        	dir("comtest/target") {
 	   sh "java -jar com.test-1.0-SNAPSHOT.jar"
-	}}
+	}
 		}
 }
