@@ -5,7 +5,6 @@ node {
 		}
         
 	stage ('Build'){
-	
     	dir("comtest") {
 	   sh "mvn clean install"
 		
