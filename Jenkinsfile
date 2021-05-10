@@ -3,7 +3,10 @@ node {
 	stage ('SCM checkout'){
 		git "https://github.com/AMIBYO/testselenuim.git"
 		}
-
+        stage ('clean'){
+    	dir("comtest") {
+	   sh "mvn clean "
+       }
 	stage ('Build'){
     	dir("comtest") {
 	   sh "mvn clean install"
