@@ -1,6 +1,6 @@
-node {
-	stage ('SCM checkout'){
-		git "https://github.com/AMIBYO/testselenuim.git"
+pipeline {
+	//stage ('SCM checkout'){
+	//	git "https://github.com/AMIBYO/testselenuim.git"
 		}
 	stage ('Build'){
     	dir("comtest") {
